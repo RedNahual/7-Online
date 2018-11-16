@@ -20,6 +20,7 @@ namespace _7_Online.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        public DbSet<Personal> Personal { get; set;}
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
